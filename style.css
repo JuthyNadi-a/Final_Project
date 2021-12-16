@@ -16,9 +16,32 @@ nav a{
     font-size: 20px;
     padding-right: 20px;
 }
-.fas{
-    font-weight: 400;
-    background-color: #fdfdfd;
-    color:  rgb(66, 29, 167);
-    padding: 10px 24px 10px 24px;
+/*--------------BANNER SECTION -----------*/
+.top-banner{
+    background-color: #544ea7;
+    padding-left: 100px;
+    padding-top: 44px;
+    height: 750px;
+    margin-bottom: 70px;
+    display: flex;
+}
+.half-width{
+    width: 50%;
+}
+h1{
+    font-size: 100px;
+    font-weight: 700;
+    color: white;
+    padding: 0;
+}
+.top-banner img{
+    height: auto;
+    width: 506px;
+    left: 1289px;
+    top: 153px;
+    border-radius: 0px;
+}
+.banner-image:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
 }
