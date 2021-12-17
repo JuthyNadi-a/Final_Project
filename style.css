@@ -17,27 +17,34 @@ nav a{
     padding-right: 20px;
 }
 /*--------------BANNER SECTION -----------*/
+.background{
+    background-image: url(images/Frame\ 57.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 .top-banner{
-    background-color: #544ea7;
     padding-left: 100px;
     padding-top: 44px;
     height: 750px;
     margin-bottom: 70px;
     display: flex;
 }
-.half-width{
+/* .half-width{
     width: 50%;
+} */
+.half-width img{
+    width: 80%;
 }
 h1{
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 700;
-    color: white;
+    color: rgb(77, 74, 250);
     padding: 0;
     margin-bottom: 20px;
 }
-.top-banner img{
+.banner-image{
     height: auto;
-    width: 506px;
+    width: 436px;
     left: 1289px;
     top: 153px;
     border-radius: 0px;
@@ -51,13 +58,13 @@ h1{
     color: rgb(99, 68, 211);
     font-size: 2em;
     font-weight: 400;
-    background-color: #faf1f4;
+    background-color:   rgb(238, 236, 243);
     height: 44px;
     width: 168px;
     margin-bottom: 160px;
     padding: 10px 24px 10px 24px;
     border-radius: 5px;
-    }
+}
     /* -------------- PLAYERS' 
                  SECTION -------------------*/
     .players-album{
@@ -105,7 +112,7 @@ h1{
     /*--------------- MATCH 
                     VIDEOS ------------*/
     .match-videos{
-        display: grid;
+        display: Flex;
         margin: 30px;
         padding-left: 20px;
         align-items: center;
@@ -130,22 +137,16 @@ h1{
     }
     /*---------- FOOTER SECTION------------ */
 
-    .footer-article{
-        display: grid;
-    }
-    .footer-article img{
-        width: 385px;
-        height: 110px;
-        align-items: center;
-        justify-content: center;
-        padding: 30px 381px 3px 405px;
+    footer{
+        background-color: lightblue;
     }
     .social-icons{
         text-align: center;
         display: flex;
         align-items: center;
+        justify-content: center;
         padding: 30px 681px 13px 548px;
-        margin-right: 30px;
+        margin-left: 50px;
     }
 
     .fab{
@@ -162,10 +163,11 @@ h1{
         align-items: center;
         justify-content: center;
     }
-    /* @media (min-width: 900px) {
-        .half-width{
+    /* Media Query */
+    @media only screen and (min-width: 900px) {
+        /* .top-banner{
             flex-direction: column; 
-        }
+        } */
         .player-frame{
             margin-bottom: 20px;
             flex-direction: column;
@@ -173,20 +175,27 @@ h1{
         .player-album{
             flex-direction: column;
         }
-        .match-videos{
-            grid-template-columns: repeat(1,2fr);
-        }
-        .footer-section{
+        /* .video{
             flex-direction: column;
-        }
+            grid-template-columns: repeat(3,1fr);
+        } */
+        /* .footer-article{
+            flex-direction: column;
+        } */
     }
-    @media (max-width: 570px) {
+    @media only screen and (max-width: 600px) {
         .top-banner{
             flex-direction: column;
             font-size: 40px;
+            padding: 0;
+            margin: 0;
+        }
+        h1{
+            padding: 0;
+            margin: 0;
         }
         .link-button{
-            font-size: .5em;
+            font-size: 1em;
             padding: 0;
         }
         .banner-image{
@@ -195,7 +204,7 @@ h1{
             background-color: #544ea7;
             padding: 0;
             margin-left: 0;
-            display: block;
+            display: flex;
         }
         .player-frame{
             margin-bottom: 20px;
@@ -204,10 +213,13 @@ h1{
         .player-album{
             flex-direction: column;
         }
-        .match-videos{
-            grid-template-columns: repeat(1,1fr);
-        }
-        .footer-section{
+        .match-videos, .video{
             flex-direction: column;
         }
-    } */
+        .videos{
+            flex-direction: column;
+        }
+        .social-icons{
+            padding: 0;
+        }
+    }
