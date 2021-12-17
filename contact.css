@@ -34,7 +34,10 @@ footer{
     padding: 30px 681px 13px 548px;
     margin-left: 50px;
 }
-
+.social-icons a{
+    text-decoration: none;
+    color: white;
+}
 .fab{
     width: 17.07px;
     height: 17.04px;
