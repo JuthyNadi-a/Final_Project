@@ -1,3 +1,8 @@
+main{
+    width: 1090px;
+    max-width: 95%;
+    margin: 0 auto;
+}
 .Followers{
     display: flex;
     box-shadow:10px 10px 20px grey;
@@ -13,6 +18,9 @@
     width:40%;
     text-align: center;
     justify-content: center;
+}
+form{
+    width: 1090px;
 }
 footer{
     background-color: rgb(248, 251, 252);
