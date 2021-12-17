@@ -1,0 +1,49 @@
+.Followers{
+    display: flex;
+    box-shadow:10px 10px 20px grey;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+}
+.boxes{
+    width:40%;
+    text-align: center;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(248, 251, 252);
+    border-radius: 5px;
+}
+.social-icons{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 681px 13px 548px;
+    margin-left: 50px;
+}
+
+.fab{
+    width: 17.07px;
+    height: 17.04px;
+    background-color:#e2e7f8 ;
+    padding:10px;
+    margin: 0px 14px;
+    border-radius: 100px;
+    color: #969BAB ;
+    }
+h4, .validation {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/*--------------------  Media Query   -------------------*/
+@media only screen and (max-width: 600px){
+    .Followers{
+        flex-direction: column;
+    }
+}
